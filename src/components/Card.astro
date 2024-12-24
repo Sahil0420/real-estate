@@ -1,0 +1,155 @@
+---
+
+import Image from "astro/components/Image.astro";
+import Bed from "/public/images/bed.svg"
+import Bath from "/public/images/bath-tub.svg"
+import CarPark from "/public/images/car-park.svg"
+// PropertyCard.astro
+interface PropertyProps {
+  title: string;
+  address: string;
+  price: number;
+  bedrooms: number;
+  bathrooms: number;
+  sqft: number;
+  image: string;
+  type : string;
+}
+
+const {
+  title = 'Commercial Property',
+  address = '222 Woodman Pub, London',
+  price = 255300,
+  bedrooms = 5,
+  bathrooms = 3,
+  sqft = 1230,
+  image = '/images/home-2.png',
+  type = null
+} = Astro.props;
+---
+
+<div class="property-card">
+  <div class="card-image">
+    <Image src={image} alt={"house image"} height={28} width={20}>
+      <div class="price-tag">${price.toLocaleString()}</div>
+    </div>
+    <div class="type">
+      {type}
+    </div>
+    <div class="card-content">
+      <h3>{title}</h3>
+      <address class="address"><u>{address}</u></address>
+      <p style="font-size: 18px;">Price: ${price}</p>
+      <div class="property-details">
+        <div class="detail">
+        <span>{bedrooms}</span>
+        <Image src={Bed} width={18} height={18} alt={"Bed"}>
+      </div>
+      
+      <div class="detail">
+        <span>{bathrooms}</span>
+        <Image src={Bath} width={18} height={18} alt={"Bath"}>
+      </div>
+      <div class="detail">
+        <span>{bathrooms}</span>
+        <Image src={CarPark} width={18} height={18} alt={"Reception"}/>
+      </div>
+      <div class="detail">
+        <i class="sqft-icon"></i>
+        <span>{sqft} Sq.Ft</span>
+      </div>
+    </div>
+    <button class="view-details" aria-label="View details about the property">View Details</button>
+  </div>
+</div>
+
+<style>
+.property-card {
+  width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card-content{
+  text-align: left;
+}
+
+.property-card:hover {
+  transform: scale(1.02);
+}
+
+.card-image {
+  position: relative;
+  height: 240px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.price-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #548fce;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.type{
+  position:relative;
+  top: -16.5rem;
+  right: -19rem;
+  width: 3rem;
+  background:rgb(87, 223, 8);
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.property-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.view-details {
+  width: 100%;
+  padding: 10px;
+  background: #548fce;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.view-details:hover {
+  background: #3a6ea5;
+}
+
+
+@media (max-width: 480px) {
+  .property-card {
+    width: 100%;
+  }
+}
+
+</style>
+
+<script>
+document.querySelector('.view-details')?.addEventListener('click', () => {
+  // Add navigation or modal logic
+});
+</script>

@@ -1,0 +1,95 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import heroimage from "/public/images/home-1.jpg";
+import properties from "../assets/popular-properties.json";
+import Card from "../components/Card.astro";
+---
+
+<Layout>
+  <div class="container">
+    <div class="hero-image">
+      <Image src={heroimage} alt="Heroimage" />
+    </div>
+    <div class="page-heading">
+      <h1>Properties</h1>
+      <p>
+        Huge number of properties available here for buy and sell <br />
+        also you can find here co-living property as you like
+      </p>
+    </div>
+  </div>
+  <div class="property-box">
+    <div class="Items">
+      {properties.map((property) => (
+        <div class="Item">
+          <Card {...property}/>  
+        </div>
+      ))}
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .hero-image {
+    height: 30rem;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      filter: brightness(70%);
+    }
+  }
+
+  .page-heading {
+    color: #dddddd;
+    position: relative;
+    text-align: center;
+    top: -15rem;
+    h1 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .property-box{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Items{
+    place-items: center;
+    display: grid;
+    grid-template-columns: repeat(3,25rem);
+    grid-template-rows: repeat(auto , 1fr);
+  }
+
+  .Item{
+    width:100%;
+  }
+
+  @media screen and (max-width : 992px) {
+    .Items{
+      grid-template-columns: repeat(2,1fr);
+    }
+
+    .Item{
+      scale: 0.8;
+    }
+  }
+
+  @media screen and (max-width : 600px){
+    .Items{
+      scale:0.7;
+    }
+    .Item{
+    }
+  }
+
+</style>

@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Modern Family Home",
+    "address": "123 Maple Street, Springfield",
+    "price": 300000,
+    "bedrooms": 4,
+    "bathrooms": 2,
+    "type" : "rent",
+    "sqft": 1800,
+    "image": "/images/home-1.jpg"
+  },
+  {
+    "title": "Luxury Condo",
+    "address": "456 Ocean Drive, Miami",
+    "price": 750000,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "sqft": 1200,
+    "type" : "sale",
+    "image": "/images/home-1.jpg"
+  },
+  {
+    "title": "Cozy Cottage",
+    "address": "789 Pine Lane, Boulder",
+    "price": 200000,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "sqft": 950,
+    "type" : "rent",
+    "image": "/images/home-1.jpg"
+  },
+  {
+    "title": "61 Malven",
+    "address": "61 Malven Road , London E6 1LS",
+    "price": 200000,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "sqft": 950,
+    "type" : "sale",
+    "image": "/images/home-1.jpg"
+  },
+  {
+    "title": "61 Malven",
+    "address": "61 Malven Road , London E6 1LS",
+    "price": 200000,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "sqft": 950,
+    "type" : "sale",
+    "image": "/images/home-1.jpg"
+  },
+  {
+    "title": "61 Malven",
+    "address": "61 Malven Road , London E6 1LS",
+    "price": 200000,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "sqft": 950,
+    "type" : "sale",
+    "image": "/images/home-1.jpg"
+  }
+]
