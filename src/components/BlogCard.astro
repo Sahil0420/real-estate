@@ -1,0 +1,98 @@
+---
+const {
+  author = "James Alber",
+  date = "22 December 2021",
+  title = "Tip's About Real Estate Recent Conditions from Agent",
+  description = "Properties are most budget friendly so you have are opportunity to find are the best the best...",
+  link = "#",
+} = Astro.props;
+---
+
+<div class="card-wrap">
+  <div class="card">
+    <img src="http://placehold.it/500x500" class="card-img" />
+    <div class="details">
+      <p class="info">{author} on {date}</p>
+      <a href={link} id="heading"
+        >{title}</a>
+        <p>
+          {description}
+        </p>
+      </a>
+    </div>
+  </div>
+
+  <style>
+    img {
+      width: 100%;
+    }
+
+    .card-grid {
+      width: 100%;
+    }
+
+    .card-grid:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .info {
+      color:rgb(180, 22, 22);
+      font-size: 14px;
+    } 
+
+    .card{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .details p{
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    #heading{
+      font-size:24px;
+      color: black;
+      transition : ease-in-out .3s;
+      text-overflow: ellipsis;
+    }
+    
+    #heading:hover{
+      color: rgb(237, 226, 71);
+    }
+
+    .card-wrap {
+      float: left;
+      width: 100%;
+      padding: 5px;
+      min-width: 100%;
+    }
+    @media (min-width: 500px) {
+      .card-wrap {
+        width: 50%;
+      }
+
+      #heading{
+        font-size: 20px;
+      }
+    }
+    @media (min-width: 720px) {
+      .card-wrap {
+        width: 25%;
+      }
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      border-bottom: 2px solid #ccc;
+    }
+    .card > div {
+      padding: 0 1em;
+    }
+  </style>
+</div>
+

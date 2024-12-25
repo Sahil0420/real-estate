@@ -1,7 +1,435 @@
 ---
-import Layout from "../layouts/Layout.astro"
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import ContactUs from "/public/images/contact-us-1.png";
+import Call from "/public/images/call.svg";
+import Mail from "/public/images/mail.svg";
+import Address from "/public/images/address.svg";
 ---
 
 <Layout>
-    
+  <div class="hero-image">
+    <Image src={ContactUs} alt={"Contact us image"} />
+  </div>
+  <div class="page-heading">
+    <h1>Contact-Us</h1>
+    <p>
+      Huge number of properties available here for buy and sell <br />
+      also you can find here co-living property as you like
+    </p>
+  </div>
+  <div class="container">
+    <h1>Get in Touch</h1>
+    <p>Fill up the form to get in touch with us.</p>
+
+    <!-- Contact form section -->
+    <div class="contact-box">
+      <!-- Left side of the form -->
+      <div class="container-left">
+        <h3>Fill the Form*</h3>
+        <!-- Form -->
+        <form id="contactForm" onsubmit="return validateForm()">
+          <div class="input-row">
+            <div class="input-group">
+              <label>Name*</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your Name"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label>Phone*</label>
+              <input
+                type="text"
+                id="phone"
+                placeholder="+91 1234567890"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Input row for Email and Subject -->
+          <div class="input-row">
+            <div class="input-group">
+              <label>Email*</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="youremail@gmail.com"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label>Subject</label>
+              <input type="text" id="subject" placeholder="Inquiry" />
+            </div>
+          </div>
+
+          <!-- Label for Message textarea -->
+          <label>Message*</label>
+          <textarea
+            rows="10"
+            id="message"
+            placeholder="Enter your Message"
+            required></textarea>
+          <button type="submit">SEND MESSAGE</button>
+        </form>
+      </div>
+      <!-- Right side with contact information -->
+      <div class="container-right">
+        <h3>Reach Us</h3>
+        <!-- Table for contact information -->
+        <table>
+          <tr>
+            <td>Email: </td>
+            <td>contact@msijanakpuri.com</td>
+          </tr>
+
+          <tr>
+            <td>Phone: </td>
+            <td>+91 011-45656183</td>
+          </tr>
+
+          <tr>
+            <td>Address: </td>
+            <td
+              >Maharaja Surajmail Institute <br />
+              C-4, Janakpuri, <br />
+              Delhi - 110058, India</td
+            >
+          </tr>
+        </table>
+
+        <!-- Map section -->
+        <div class="map">
+          <!-- Google Map iframe -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.2888210618585!2d77.09131724016883!3d28.621104670527558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d04afb8dbcfe1%3A0xaff19e718be2136b!2sMaharaja%20Surajmal%20Institute%20Of%20Technology!5e0!3m2!1sen!2sin!4v1711214006526!5m2!1sen!2sin"
+            width="800"
+            height="275"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
 </Layout>
+
+<style>
+  .hero-image {
+    height: 30rem;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      filter: brightness(70%);
+    }
+  }
+
+  .page-heading {
+    color: #dddddd;
+    position: relative;
+    text-align: center;
+    top: -15rem;
+    h1 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .container {
+    width: 80%;
+    margin: 50px auto;
+  }
+
+  /* Styling for main heading */
+  .container h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+
+  /* Styling for paragraph text */
+  .container p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 40px;
+  }
+
+  /* Styling for contact box container */
+  .contact-box {
+    background: #ffffff;
+    display: flex;
+    border-radius: 20px;
+  }
+
+  /* Styling for left container inside the contact box */
+  .container-left {
+    flex-basis: 60%;
+    padding: 40px 60px;
+  }
+
+  /* Styling for right container inside the contact box */
+  .container-right {
+    flex-basis: 40%;
+    padding: 40px 60px;
+    background: hsl(207, 95%, 55%);
+    color: #ffffff;
+    border-radius: 0px 20px 20px 0px;
+  }
+
+  /* Styling for heading inside left container */
+  .container-left h3 {
+    font-size: 25px;
+    color: #353535;
+    margin-bottom: 20px;
+  }
+
+  /* Styling for heading inside right container */
+  .container-right h3 {
+    font-size: 25px;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+
+  /* Styling for input rows */
+  .input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  /* Styling for input groups inside input rows */
+  .input-row .input-group {
+    flex-basis: 45%;
+  }
+
+  /* Styling for input fields */
+  input {
+    width: 95%;
+    border: none;
+    color: #353535;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+
+  /* Styling for textareas */
+  textarea {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 15px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  /* Styling for labels */
+  label {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    color: #353535;
+  }
+
+  /* Styling for buttons */
+  button {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    background: #000000;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 20%;
+    height: 40px;
+    border-radius: 25px;
+    margin-top: 20px;
+    transition: all 0.5s ease 0s;
+    box-shadow: 0px 5px 10px 0px #0000003a;
+  }
+
+  /* Hover styling for buttons */
+  button:hover {
+    color: #fff;
+    background: hsl(207, 97%, 35%);
+    box-shadow: 0px 5px 10px 0px hsla(207, 97%, 35%, 0.431);
+  }
+
+  /* Styling for table cells */
+  tr td:first-child {
+    font-size: 20px;
+    font-weight: 600;
+    padding-right: 20px;
+  }
+
+  tr td {
+    padding-top: 20px;
+  }
+
+  /* Styling for iframes */
+  iframe {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 30px;
+  }
+
+  /* CSS for larger screens (laptop) */
+  @media only screen and (min-width: 1367px) {
+    .container {
+      width: 70%;
+    }
+
+    .container h1 {
+      font-size: 50px;
+    }
+
+    .container p {
+      font-size: 25px;
+    }
+
+    .container-left,
+    .container-right {
+      padding: 40px;
+    }
+
+    .input-row .input-group {
+      flex-basis: 48%;
+    }
+
+    button {
+      width: 30%;
+    }
+  }
+
+  /* CSS for larger screens (laptop) */
+  @media only screen and (max-width: 1366px) {
+    .container {
+      width: 70%;
+    }
+
+    .container h1 {
+      font-size: 45px;
+    }
+
+    .container p {
+      font-size: 22px;
+    }
+
+    .container-left,
+    .container-right {
+      padding: 40px;
+    }
+
+    input {
+      width: 90%;
+    }
+
+    .input-row .input-group {
+      flex-basis: 48%;
+    }
+
+    button {
+      width: 60%;
+    }
+  }
+
+  /* CSS for medium-sized screens (tablet) */
+  @media only screen and (max-width: 1024px) {
+    .contact-box {
+      flex-direction: column;
+    }
+
+    .container {
+      width: 80%;
+    }
+
+    .container h1 {
+      font-size: 40px;
+    }
+
+    .container p {
+      font-size: 22px;
+    }
+
+    .container-left,
+    .container-right {
+      padding: 30px;
+    }
+
+    .input-row {
+      flex-wrap: wrap;
+    }
+
+    .input-row .input-group {
+      flex-basis: 100%;
+      margin-bottom: 15px;
+    }
+
+    button {
+      width: 25%;
+    }
+  }
+
+  /* CSS for smaller screens (mobile) */
+  @media only screen and (max-width: 767px) {
+    .container {
+      width: 90%;
+    }
+
+    .container h1 {
+      font-size: 40px;
+    }
+
+    .container p {
+      font-size: 18px;
+    }
+
+    .container-left,
+    .container-right {
+      padding: 20px;
+    }
+
+    .input-row {
+      flex-direction: column; /* Stack input rows vertically */
+    }
+
+    .input-row .input-group {
+      flex-basis: 100%;
+      margin-bottom: 15px;
+    }
+
+    input,
+    textarea {
+      padding: 8px;
+    }
+
+    button {
+      width: 60%;
+    }
+
+    tr td:first-child {
+      font-size: 15px;
+      font-weight: 600;
+      padding-right: 10px;
+    }
+  }
+</style>

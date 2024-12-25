@@ -1,39 +1,46 @@
 ---
-import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
-import heroimage from "/public/images/home-1.jpg";
-import properties from "../assets/popular-properties.json";
-import Card from "../components/Card.astro";
+import heroimage from "/public/images/res-1.jpg";
+import { Image } from "astro:assets";
+import BlogCard from "../components/BlogCard.astro";
+import Blogs from "../assets/blog-posts.json";
+import type { ACTION_ERROR_CODES } from "astro:actions";
 ---
 
 <Layout>
-  <div>
+  <div class="container">
     <div class="hero-image">
       <Image src={heroimage} alt="Heroimage" />
     </div>
     <div class="page-heading">
-      <h1>Properties</h1>
+      <h1>Latest Blog Post</h1>
       <p>
         Huge number of properties available here for buy and sell <br />
         also you can find here co-living property as you like
       </p>
     </div>
   </div>
-  <div class="property-box">
+  <div class="container">
     <div class="card-grid">
-      {properties.map((property) => <Card {...property} id="card" />)}
+      {Blogs.map((blog) => <BlogCard {...blog} />)}
     </div>
   </div>
 </Layout>
 
 <style>
+
+  .card-grid{
+    display:grid;
+    grid-template-columns: auto auto auto;
+  }
+
   .hero-image {
     height: 30rem;
     overflow: hidden;
 
     img {
       width: 100%;
-      object-fit: cover;
+      height: 100%;
       filter: brightness(70%);
     }
   }
@@ -51,14 +58,10 @@ import Card from "../components/Card.astro";
     }
   }
 
-  .property-box {
-    margin: 2rem auto;
-    display: flex;
-    width: 80vw;
-  }
-
-  .card-grid{
-    width: 100%;
+  @media( max-width : 740px){
+    .card-grid{
+      grid-template-columns: auto auto;
+    }
   }
 
 </style>

@@ -82,24 +82,22 @@ import properties from "../assets/popular-properties.json";
   </div>
   <div class="popular">
     <h3>Popular Properties</h3>
-    <ul>
+    <div class="card-grid">
       {
         properties.map((property) => (
-          <li>
-            <Card
-              title={property.title}
-              address={property.address}
-              price={property.price}
-              bedrooms={property.bedrooms}
-              bathrooms={property.bathrooms}
-              sqft={property.sqft}
-              image={property.image}
-              type={property.type}
-            />
-          </li>
+          <Card
+            title={property.title}
+            address={property.address}
+            price={property.price}
+            bedrooms={property.bedrooms}
+            bathrooms={property.bathrooms}
+            sqft={property.sqft}
+            image={property.image}
+            type={property.type}
+          />
         ))
       }
-    </ul>
+    </div>
   </div>
   <div class="popular video-area">
     <p>Take a video tour</p>
@@ -114,7 +112,8 @@ import properties from "../assets/popular-properties.json";
   <div class="container">
     <p class="question">
       Have a Question? <a href="tel:+44 7395296011">+44 7395296011</a> / <a
-        href="tel:+44 7886 864975">+44 7886 864975</a>
+        href="tel:+44 7886 864975">+44 7886 864975</a
+      >
     </p>
   </div>
 </section>
@@ -130,8 +129,9 @@ import properties from "../assets/popular-properties.json";
     filter: blur(100px);
   }
 
-  .question{
-    p,a{
+  .question {
+    p,
+    a {
       display: inline;
       text-align: center;
     }
@@ -158,6 +158,8 @@ import properties from "../assets/popular-properties.json";
   }
 
   .slider {
+    display: flex;
+    overflow-x: scroll;
   }
 
   .hero-subtitle {
