@@ -60,29 +60,71 @@ const {
 <style>
   img {
     width: 100%;
-    object-fit: cover;
-    max-width: 100%;
   }
 
   .card-grid {
     width: 100%;
   }
+
+  address{
+    text-overflow: ellipsis;
+  }
+
   .card-grid:after {
     content: "";
     display: table;
     clear: both;
   }
 
+  .info {
+    color: rgb(180, 22, 22);
+    font-size: 14px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .detail{
+    display: flex;
+    gap: 0.3rem;
+  }
+
+  .details p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  #heading {
+    font-size: 24px;
+    color: black;
+    transition: ease-in-out 0.3s;
+    text-overflow: ellipsis;
+  }
+
+  #heading:hover {
+    color: rgb(237, 226, 71);
+  } 
+
+  .property-details{
+    display: flex;
+    justify-content:space-evenly;
+
+  }
+
   .card-wrap {
     float: left;
     width: 100%;
     padding: 5px;
+    min-width: 100%;
   }
   @media (min-width: 500px) {
     .card-wrap {
       width: 50%;
     }
   }
+
   @media (min-width: 720px) {
     .card-wrap {
       width: 25%;
@@ -97,21 +139,6 @@ const {
   }
   .card > div {
     padding: 0 1em;
-  }
-
-  .card-content {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .property-details {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .detail {
-    display: flex;
-    justify-content: space-evenly;
   }
 </style>
 

@@ -19,10 +19,8 @@ import Card from "../components/Card.astro";
       </p>
     </div>
   </div>
-  <div class="property-box">
-    <div class="card-grid">
-      {properties.map((property) => <Card {...property} id="card" />)}
-    </div>
+  <div class="card-grid">
+    {properties.map((property) => <Card {...property} id="card" />)}
   </div>
 </Layout>
 
@@ -51,14 +49,28 @@ import Card from "../components/Card.astro";
     }
   }
 
-  .property-box {
-    margin: 2rem auto;
-    display: flex;
+  .card-grid {
+    margin: 0 auto;
     width: 80vw;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
   }
 
-  .card-grid{
-    width: 100%;
+  @media screen and (max-width: 1200px) {
+    .card-grid {
+      grid-template-columns: auto auto auto ;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .card-grid {
+      grid-template-columns: auto auto;
+    }
   }
 
+  @media screen and (max-width: 580px) {
+    .card-grid {
+      grid-template-columns: auto;
+    }
+  }
 </style>
