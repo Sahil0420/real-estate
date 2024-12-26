@@ -1,0 +1,57 @@
+.
+├── abc.txt
+├── astro.config.mjs
+├── package.json
+├── package-lock.json
+├── public
+│   ├── favicon.svg
+│   └── images
+│       ├── address.svg
+│       ├── astro.svg
+│       ├── background.svg
+│       ├── bath-tub.svg
+│       ├── bed.svg
+│       ├── call.svg
+│       ├── car-park.svg
+│       ├── contact-us-1.png
+│       ├── fallback.svg
+│       ├── home-1.jpg
+│       ├── home-2.png
+│       ├── location.svg
+│       ├── logo.svg
+│       ├── mail.svg
+│       ├── money-bag.svg
+│       ├── res-1.jpg
+│       ├── res-2.jpg
+│       ├── res-3.jpg
+│       ├── res-4.jpg
+│       ├── res-5.jpg
+│       ├── res-6.jpg
+│       └── trust.svg
+├── README.md
+├── src
+│   ├── assets
+│   │   ├── blog-posts.json
+│   │   ├── css
+│   │   │   └── style.css
+│   │   ├── js
+│   │   │   └── script.js
+│   │   ├── popular-properties.json
+│   │   └── properties.json
+│   ├── components
+│   │   ├── BlogCard.astro
+│   │   ├── Card.astro
+│   │   ├── Footer.astro
+│   │   ├── Home.astro
+│   │   ├── Navbar.astro
+│   │   └── NavbarToggle.astro
+│   ├── layouts
+│   │   └── Layout.astro
+│   └── pages
+│       ├── blog.astro
+│       ├── contact.astro
+│       ├── index.astro
+│       └── property.astro
+└── tsconfig.json
+
+9 directories, 45 files
