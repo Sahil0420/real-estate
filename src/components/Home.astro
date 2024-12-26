@@ -85,7 +85,7 @@ import properties from "../assets/popular-properties.json";
     <div class="card-grid">
       {
         properties.map((property) => (
-          <Card
+          <Card class="card-item"
             title={property.title}
             address={property.address}
             price={property.price}
@@ -134,6 +134,27 @@ import properties from "../assets/popular-properties.json";
     a {
       display: inline;
       text-align: center;
+    }
+  }
+
+  .card-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  @media screen and (max-width : 880px){
+    .card-grid{
+      grid-template-columns: auto auto;
+    }
+  }
+
+  @media screen and ( max-width : 680px){
+    .popular{
+      background:green;
+    }
+
+    .card-grid{
+      display: block;
     }
   }
 
