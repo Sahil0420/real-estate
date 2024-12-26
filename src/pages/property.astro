@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import heroimage from "/public/images/home-1.jpg";
-import properties from "../assets/popular-properties.json";
+import properties from "../assets/properties.json";
 import Card from "../components/Card.astro";
 ---
 
@@ -51,9 +51,10 @@ import Card from "../components/Card.astro";
 
   .card-grid {
     margin: 0 auto;
-    width: 80vw;
+    width: 60vw;
+    max-width:840px;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
   }
 
   @media screen and (max-width: 1200px) {

@@ -969,10 +969,6 @@ button, a { transition: var(--transition); }
   text-transform: uppercase;
 }
 
-
-
-
-
 /*-----------------------------------*\
   #CTA
 \*-----------------------------------*/
@@ -1023,11 +1019,6 @@ button, a { transition: var(--transition); }
 }
 
 .cta-btn::before { background: var(--black); }
-
-
-
-
-
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/

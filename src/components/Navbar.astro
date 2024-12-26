@@ -2,6 +2,7 @@
 import "../assets/css/style.css";
 import logo from "/public/images/logo.svg?raw";
 import NavbarToggle from "./NavbarToggle.astro";
+import { getRelativeLocaleUrl } from "astro:i18n";
 ---
 
 <header class="header" data-header>
@@ -83,23 +84,23 @@ import NavbarToggle from "./NavbarToggle.astro";
             </li>
 
             <li>
-              <a href="about" class="navbar-link" data-nav-link>About</a>
+              <a href="/about" class="navbar-link" data-nav-link>About</a>
             </li>
 
             <li>
-              <a href="service" class="navbar-link" data-nav-link>Service</a>
+              <a href="/service" class="navbar-link" data-nav-link>Service</a>
             </li>
 
             <li>
-              <a href="property" class="navbar-link" data-nav-link>Property</a>
+              <a href="/property" class="navbar-link" data-nav-link>Property</a>
             </li>
 
             <li>
-              <a href="blog" class="navbar-link" data-nav-link>Blog</a>
+              <a href="/blog" class="navbar-link" data-nav-link>Blog</a>
             </li>
 
             <li>
-              <a href="contact" class="navbar-link" data-nav-link>Contact</a>
+              <a href="/contact" class="navbar-link" data-nav-link>Contact</a>
             </li>
           </ul>
         </div>
