@@ -3,11 +3,11 @@
     "title": "11, High Street, Barkingside, Ilford, Greater London IG6 2EZ",
     "address": "11, High Street, Barkingside, Ilford, Greater London IG6 2EZ",
     "price": 169000,
-    "bedrooms": null,
-    "bathrooms": null,
-    "type": "sale",
-    "sqft": null,
-    "image": "/images/home-1.jpg"
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "reception": "1",
+    "sqft": "---",
+    "image": "/images/11highstreet.png"
   },
   {
     "title": "13 Lansdowne Way, Stockwell, London SW8 1HL",
@@ -17,57 +17,37 @@
     "bathrooms": null,
     "type": "commercial",
     "sqft": null,
-    "image": "/images/home-1.jpg"
+    "image": "/images/bengalspice.png"
   },
   {
     "title": "21, Wall End Court, Wall End Road, London, E6 2NW",
     "address": "21, Wall End Court, Wall End Road, London, E6 2NW",
-    "price": null,
-    "bedrooms": null,
-    "bathrooms": null,
-    "type": "sale",
-    "sqft": null,
-    "image": "/images/home-1.jpg"
+    "price": 26500,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "reception": 1,
+    "sqft": "---",
+    "image": "/images/third-property.webp"
   },
   {
     "title": "22, Linsey Street, London, Greater London SE16 3YD",
     "address": "22, Linsey Street, London, Greater London SE16 3YD",
-    "price": null,
-    "bedrooms": null,
-    "bathrooms": null,
-    "type": "sale",
-    "sqft": null,
-    "image": "/images/home-1.jpg"
-  },
-  {
-    "title": "25-27 High Street Leominster HR6 8LZ",
-    "address": "25-27 High Street, Leominster HR6 8LZ",
-    "price": null,
-    "bedrooms": null,
-    "bathrooms": null,
-    "type": "commercial",
-    "sqft": null,
-    "image": "/images/home-1.jpg"
+    "price": 41500,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "reception": "1",
+    "sqft": 420,
+    "image": "/images/fourth-property.webp"
   },
   {
     "title": "40 Hoe Street, London E17 4PH",
     "address": "40 Hoe Street, London E17 4PH",
-    "price": null,
-    "bedrooms": null,
-    "bathrooms": null,
-    "type": "rent",
-    "sqft": null,
-    "image": "/images/home-1.jpg"
-  },
-  {
-    "title": "55 Leytonstone Road",
-    "address": "55 Leytonstone Road, London",
-    "price": null,
-    "bedrooms": null,
-    "bathrooms": null,
-    "type": "sale",
-    "sqft": null,
-    "image": "/images/home-1.jpg"
+    "price": "22000 pa",
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "reception": "1",
+    "sqft": 433,
+    "image": "/images/fortyhoestreet.webp"
   },
   {
     "title": "61 Malvern Road, London, E6 1LS",
@@ -80,104 +60,74 @@
     "image": "/images/res-1.jpg"
   },
   {
-    "title": "63 Huntsman Road, Ilford, IG6 3SX",
-    "address": "63 Huntsman Road, Ilford, IG6 3SX",
-    "price": null,
-    "bedrooms": null,
-    "bathrooms": null,
-    "type": "sale",
-    "sqft": null,
-    "image": "/images/home-1.jpg"
-  },
-  {
     "title": "86A, The Green, Southall",
     "address": "86A, The Green, Southall, Greater London UB2 4BG",
     "price": 255300,
     "bedrooms": 3,
     "bathrooms": 1,
-    "reception":2,
+    "reception": 2,
     "sqft": 1230,
     "image": "/images/res-2.jpg"
   },
   {
     "title": "194A King Street, London",
     "address": "194A King Street, London, Hammersmith And Fulham, Greater London, W6 0RA",
-    "price": null,
-    "bedrooms": null,
-    "bathrooms": null,
-    "type": "sale",
-    "sqft": null,
-    "image": "/images/home-1.jpg"
+    "price": 674000,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "reception": "---",
+    "sqft": 736,
+    "image": "/images/194Akingstreet.webp"
   },
   {
     "title": "236 Coggeshall Road, 9EL",
     "address": "236 Coggeshall Road, Braintree CM7 9EL",
-    "price": null,
-    "bedrooms": null,
-    "bathrooms": null,
-    "type": "sale",
-    "sqft": null,
-    "image": "/images/home-1.jpg"
-  },
-  {
-    "title": "245 Portland Road, 4XB",
-    "address": "245 Portland Road, South Norwood SE24 4XB",
-    "price": null,
-    "bedrooms": null,
-    "bathrooms": null,
-    "reception": null,
-    "sqft": null,
-    "image": "/images/home-1.jpg"
+    "price": 73000,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "reception": "---",
+    "sqft": 614,
+    "image": "/images/coggshallcm7.webp"
   },
   {
     "title": "317 High Road, Ilford",
     "address": "317 High Road, Ilford, Redbridge, Greater London, IG1 1NR",
-    "price": null,
-    "bedrooms": null,
-    "bathrooms": null,
-    "type": "sale",
-    "sqft": null,
-    "image": "/images/home-1.jpg"
+    "price": 394000,
+    "bedrooms": "---",
+    "bathrooms": 2,
+    "reception": "20",
+    "sqft": 646,
+    "image": "/images/highroad-ilford.png"
   },
   {
     "title": "931D Romford Road, London, E12 5JT",
     "address": "931D Romford Road, London, E12 5JT",
     "price": 25550,
     "bedrooms": 1,
-    "bathrooms":1,
+    "bathrooms": 1,
     "reception": 1,
-    "sqft":982,
+    "sqft": 982,
     "image": "/images/res-3.jpg"
-  },
-  {
-    "title": "222 Durnsford Rd, London SW19 8DR",
-    "address": "222 Durnsford Rd, London SW19 8DR",
-    "price": null,
-    "bedrooms": null,
-    "bathrooms": null,
-    "type": "commercial",
-    "sqft": null,
-    "image": "/images/home-1.jpg"
   },
   {
     "title": "3A Sumner House, Watts Grove",
     "address": "3A Sumner House, Watts Grove, London E3 3RB",
-    "price": null,
-    "bedrooms": null,
-    "bathrooms": null,
-    "type": "sale",
-    "sqft": null,
-    "image": "/images/home-1.jpg"
+    "price": 216000,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "reception": 1,
+    "sqft": 463,
+    "image": "/images/3asumnerhouse.png"
   },
   {
     "title": "7, Hasler Court, E12 6BX",
     "address": "7, Hasler Court, Carlyle Road, London, Newham, Greater London, E12 6BX",
-    "price": null,
-    "bedrooms": null,
-    "bathrooms": null,
-    "type": "sale",
-    "sqft": null,
-    "image": "/images/home-1.jpg"
+    "price": 321000,
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "reception": "2",
+    "sqft": 829,
+    "image": "/images/flat-7-hasler.webp"
   },
   {
     "title": "18, Gloucester Mews",

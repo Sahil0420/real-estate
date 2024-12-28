@@ -1,62 +1,62 @@
 [
   {
-    "title": "Modern Family Home",
-    "address": "123 Maple Street, Springfield",
-    "price": 300000,
+    "title": "61 Malvern Road, London, E6 1LS",
+    "address": "61 Malvern Road, London, Newham, Greater London, E6 1LS",
+    "price": 1733,
     "bedrooms": 4,
-    "bathrooms": 2,
-    "type" : "rent",
-    "sqft": 1800,
-    "image": "/images/home-1.jpg"
+    "bathrooms": 3,
+    "reception": 2,
+    "sqft": 255300,
+    "image": "/images/res-1.jpg"
   },
   {
-    "title": "Luxury Condo",
-    "address": "456 Ocean Drive, Miami",
-    "price": 750000,
+    "title": "86A, The Green, Southall",
+    "address": "86A, The Green, Southall, Greater London UB2 4BG",
+    "price": 255300,
+    "bedrooms": 3,
+    "bathrooms": 1,
+    "reception": 2,
+    "sqft": 1230,
+    "image": "/images/res-2.jpg"
+  },
+  {
+    "title": "931D Romford Road, London, E12 5JT",
+    "address": "931D Romford Road, London, E12 5JT",
+    "price": 25550,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "reception": 1,
+    "sqft": 982,
+    "image": "/images/res-3.jpg"
+  },
+  {
+    "title": "18, Gloucester Mews",
+    "address": "18, Gloucester Mews, New Romney, Kent TN28 8XQ",
+    "price": 255300,
+    "bedrooms": 4,
+    "bathrooms": 1,
+    "reception": 1,
+    "sqft": "---",
+    "image": "/images/res-5.jpg"
+  },
+  {
+    "title": "440 Barrows Lane B26",
+    "address": "440 Barrows Lane, Birmingham",
+    "price": 255300,
     "bedrooms": 3,
     "bathrooms": 2,
-    "sqft": 1200,
-    "type" : "sale",
-    "image": "/images/home-1.jpg"
+    "reception": 1,
+    "sqft": 764,
+    "image": "/images/res-4.jpg"
   },
   {
-    "title": "Cozy Cottage",
-    "address": "789 Pine Lane, Boulder",
-    "price": 200000,
-    "bedrooms": 2,
+    "title": "10 Cricklade Street, Cirencester, Gloucestershire GL7 1JH",
+    "address": "10 Cricklade Street, Cirencester, Gloucestershire GL7 1JH",
+    "price": 255300,
+    "bedrooms": 3,
     "bathrooms": 1,
-    "sqft": 950,
-    "type" : "rent",
-    "image": "/images/home-1.jpg"
-  },
-  {
-    "title": "61 Malven",
-    "address": "61 Malven Road , London E6 1LS",
-    "price": 200000,
-    "bedrooms": 2,
-    "bathrooms": 1,
-    "sqft": 950,
-    "type" : "sale",
-    "image": "/images/home-1.jpg"
-  },
-  {
-    "title": "61 Malven",
-    "address": "61 Malven Road , London E6 1LS",
-    "price": 200000,
-    "bedrooms": 2,
-    "bathrooms": 1,
-    "sqft": 950,
-    "type" : "sale",
-    "image": "/images/home-1.jpg"
-  },
-  {
-    "title": "61 Malven",
-    "address": "61 Malven Road , London E6 1LS",
-    "price": 200000,
-    "bedrooms": 2,
-    "bathrooms": 1,
-    "sqft": 950,
-    "type" : "sale",
-    "image": "/images/home-1.jpg"
+    "reception": 1,
+    "sqft": "---",
+    "image": "/images/res-6.jpg"
   }
 ]
