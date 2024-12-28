@@ -4,30 +4,43 @@
 ├── package.json
 ├── package-lock.json
 ├── public
+│   ├── favicon1.svg
 │   ├── favicon.svg
-│   └── images
-│       ├── address.svg
-│       ├── astro.svg
-│       ├── background.svg
-│       ├── bath-tub.svg
-│       ├── bed.svg
-│       ├── call.svg
-│       ├── car-park.svg
-│       ├── contact-us-1.png
-│       ├── fallback.svg
-│       ├── home-1.jpg
-│       ├── home-2.png
-│       ├── location.svg
-│       ├── logo.svg
-│       ├── mail.svg
-│       ├── money-bag.svg
-│       ├── res-1.jpg
-│       ├── res-2.jpg
-│       ├── res-3.jpg
-│       ├── res-4.jpg
-│       ├── res-5.jpg
-│       ├── res-6.jpg
-│       └── trust.svg
+│   ├── images
+│   │   ├── 11highstreet.png
+│   │   ├── 194Akingstreet.webp
+│   │   ├── 3asumnerhouse.png
+│   │   ├── address.svg
+│   │   ├── astro.svg
+│   │   ├── background.svg
+│   │   ├── bath-tub.svg
+│   │   ├── bed.svg
+│   │   ├── bengalspice.png
+│   │   ├── call.svg
+│   │   ├── car-park.svg
+│   │   ├── coggshallcm7.webp
+│   │   ├── contact-us-1.png
+│   │   ├── fallback.svg
+│   │   ├── flat-7-hasler.webp
+│   │   ├── fortyhoestreet.webp
+│   │   ├── fourth-property.webp
+│   │   ├── highroad-ilford.png
+│   │   ├── home-1.jpg
+│   │   ├── home-2.png
+│   │   ├── home-image.jpg
+│   │   ├── location.svg
+│   │   ├── logo.svg
+│   │   ├── mail.svg
+│   │   ├── money-bag.svg
+│   │   ├── res-1.jpg
+│   │   ├── res-2.jpg
+│   │   ├── res-3.jpg
+│   │   ├── res-4.jpg
+│   │   ├── res-5.jpg
+│   │   ├── res-6.jpg
+│   │   ├── third-property.webp
+│   │   └── trust.svg
+│   └── _redirects
 ├── README.md
 ├── src
 │   ├── assets
@@ -48,10 +61,13 @@
 │   ├── layouts
 │   │   └── Layout.astro
 │   └── pages
-│       ├── blog.astro
+│       ├── about.astro
+│       ├── blog
+│       │   ├── index.astro
+│       │   └── [...slug].astro
 │       ├── contact.astro
 │       ├── index.astro
 │       └── property.astro
 └── tsconfig.json
 
-9 directories, 45 files
+10 directories, 60 files

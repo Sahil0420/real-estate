@@ -1,10 +1,9 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "../../layouts/Layout.astro";
 import heroimage from "/public/images/res-1.jpg";
 import { Image } from "astro:assets";
-import BlogCard from "../components/BlogCard.astro";
-import Blogs from "../assets/blog-posts.json";
-import type { ACTION_ERROR_CODES } from "astro:actions";
+import BlogCard from "../../components/BlogCard.astro";
+import Blogs from "../../assets/blog-posts.json";
 ---
 
 <Layout>
@@ -31,6 +30,7 @@ import type { ACTION_ERROR_CODES } from "astro:actions";
   .card-grid {
     display: grid;
     grid-template-columns: auto auto auto;
+    grid-auto-flow: row;
   }
 
   .hero-image {
