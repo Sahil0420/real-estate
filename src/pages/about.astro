@@ -1,7 +1,60 @@
 ---
-import Layout from "../layouts/Layout.astro"
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import HeaderImage from "/public/images/home-image.jpg";
 ---
 
 <Layout>
-  
+  <div class="hero-image">
+    <Image src={HeaderImage} alt={"Header Image"} id="headerimage" />
+  </div>
+  <div class="container infos">
+    <div class="info">
+      <h2>JOTHINANDAN , Vijeletchimi</h2>
+      <h4>Correspondence Address</h4>
+      <address>96 Oaks Lane , Ilford , Essex , IG2 7PX</address>
+      <div class="details">
+        <ul>
+          <li><strong>Role : </strong> Director</li>
+          <li>Date Of Birth : Nov 1971</li>
+          <li>Appointed : 12 Oct 2006</li>
+          <li>Country Of Residence : England</li>
+          <li>Occupation : Bussiness Owner</li>
+        </ul>
+      </div>
+    </div>
+    <div class="info">
+      <h2>MARKANDU , Maheswaran</h2>
+      <h4>Correspondence Address</h4>
+      <address>96 Oaks Lane , Ilford , Essex , IG2 7PX</address>
+      <div class="details">
+        <ul>
+          <li><strong>Role : </strong>Secretary</li>
+          <li>Appointed : 12 Oct 2006</li>
+          <li>Nationality : Sri Lankan</li>
+          <li>Occupation : Developer</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </Layout>
+
+<style>
+  .hero-image {
+    height: 40rem;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      filter: brightness(70%);
+    }
+  }
+
+  .infos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem auto;
+    padding: 1rem;
+    
+  }
+</style>

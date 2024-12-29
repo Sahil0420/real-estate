@@ -1,0 +1,145 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import headerImage from "/public/images/resources.jpg";
+import BuyerResource from "../assets/buyer_resource.json";
+import SellerResource from "../assets/seller_resource.json";
+---
+
+<Layout>
+  <div class="container">
+    <div class="hero-image">
+      <Image src={headerImage} alt={"image"} />
+    </div>
+    <div class="page-heading">
+      <h1>Our Resources</h1>
+      <p>
+        Huge number of properties available here for buuy and sell <br />
+        also you can find here co-living property as you like.
+      </p>
+    </div>
+    <div class="container buyer">
+      <h1>Buyers Resource</h1>
+      <div class="grid">
+        {
+          BuyerResource.map(({ category, resources }) => (
+            <div class="card">
+              <h3>{category}</h3>
+              <ul>
+                {resources.map(({ name, description, url }) => (
+                  <li>
+                    <strong>{name}</strong>: {description} <br />
+                    <a href={url} target="_blank" rel="noopener noreferrer">
+                      {url}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+    <div class="container buyer">
+      <h1>Seller Resources</h1>
+      <div class="grid">
+        {
+          SellerResource  .map(({ category, resources }) => (
+            <div class="card">
+              <h3>{category}</h3>
+              <ul>
+                {resources.map(({ name, description, url }) => (
+                  <li>
+                    <strong>{name}</strong>: {description} <br />
+                    <a href={url} target="_blank" rel="noopener noreferrer">
+                      {url}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .hero-image {
+    height: 30rem;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      filter: brightness(70%);
+    }
+  }
+
+  .buyer {
+    padding: 1rem 0.5rem;
+
+    h1 {
+      text-align: center;
+    }
+  }
+
+  .page-heading {
+    color: #dddddd;
+    position: relative;
+    text-align: center;
+    top: -15rem;
+    h1 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-auto-rows: 300px;
+    margin: 2rem 0;
+  }
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: scale ease-in-out 0.5s;
+    overflow-y: scroll;
+  }
+
+  .card:hover {
+    scale: 1.05;
+  }
+
+  .card h3 {
+    margin-top: 0;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    margin: 1rem;
+    font-size: 1.25rem;
+    color: #333;
+  }
+  .card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .card ul li {
+    margin-bottom: 1rem;
+  }
+  .card ul li a {
+    color: #0070f3;
+    text-decoration: none;
+  }
+  .card ul li a:hover {
+    text-decoration: underline;
+  }
+</style>

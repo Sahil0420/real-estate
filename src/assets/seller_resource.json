@@ -1,0 +1,77 @@
+[
+  {
+    "category": "Valuation Tools",
+    "resources": [
+      {
+        "name": "Zoopla Property Valuation",
+        "description": "Get estimated property values based on local trends.",
+        "url": "https://www.zoopla.co.uk/property-values/"
+      },
+      {
+        "name": "Rightmove Sold Prices",
+        "description": "Check recently sold prices in your area for pricing insights.",
+        "url": "https://www.rightmove.co.uk/house-prices.html"
+      }
+    ]
+  },
+  {
+    "category": "Staging and Marketing Tips",
+    "resources": [
+      {
+        "name": "Home Staging Checklist",
+        "description": "Professional tips for preparing your home for sale.",
+        "url": "https://www.homestagingresources.com/checklist"
+      },
+      {
+        "name": "Canva for Real Estate",
+        "description": "Create attractive property listings and brochures.",
+        "url": "https://www.canva.com/templates/real-estate/"
+      }
+    ]
+  },
+  {
+    "category": "Finding Estate Agents",
+    "resources": [
+      {
+        "name": "YOPA Reviews",
+        "description": "Reviews of estate agents to find the best fit for selling your property.",
+        "url": "https://www.yopa.co.uk/reviews"
+      },
+      {
+        "name": "The Property Ombudsman",
+        "description": "Verify if an agent complies with ethical practices.",
+        "url": "https://www.tpos.co.uk/"
+      }
+    ]
+  },
+  {
+    "category": "Legal Guidance",
+    "resources": [
+      {
+        "name": "Gov.uk: Selling Your Property",
+        "description": "Official resources for understanding the legalities of selling property in the UK.",
+        "url": "https://www.gov.uk/selling-your-home"
+      },
+      {
+        "name": "RICS Find a Surveyor",
+        "description": "Locate certified surveyors for pre-sale evaluations.",
+        "url": "https://www.ricsfirms.com/"
+      }
+    ]
+  },
+  {
+    "category": "Pricing and Market Trends",
+    "resources": [
+      {
+        "name": "UK House Price Index",
+        "description": "Government data on house price trends.",
+        "url": "https://landregistry.data.gov.uk/app/ukhpi"
+      },
+      {
+        "name": "ONS Housing Statistics",
+        "description": "Data and insights into housing affordability and market shifts.",
+        "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing"
+      }
+    ]
+  }
+]

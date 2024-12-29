@@ -1,0 +1,77 @@
+[
+  {
+    "category": "Property Search Platforms",
+    "resources": [
+      {
+        "name": "Rightmove",
+        "description": "Offers property listings, market data, and local area insights",
+        "url": "https://www.rightmove.co.uk"
+      },
+      {
+        "name": "Zoopla",
+        "description": "Features property valuations, search tools, and historical price trends",
+        "url": "https://www.zoopla.co.uk"
+      }
+    ]
+  },
+  {
+    "category": "Mortgage and Financial Tools",
+    "resources": [
+      {
+        "name": "MoneySuperMarket",
+        "description": "Compare mortgage rates, calculate monthly repayments, and evaluate affordability",
+        "url": "https://www.moneysupermarket.com/mortgages"
+      },
+      {
+        "name": "Nationwide Mortgage Calculator",
+        "description": "Estimate borrowing amounts based on income and expenses",
+        "url": "https://www.nationwide.co.uk/mortgages/calculators"
+      }
+    ]
+  },
+  {
+    "category": "Home-Buying Guides",
+    "resources": [
+      {
+        "name": "Which? Home-buying Advice",
+        "description": "Step-by-step tips on the home-buying process, from viewing properties to finalizing deals",
+        "url": "https://www.which.co.uk/money/mortgages-and-property/first-time-buyers"
+      },
+      {
+        "name": "Gov.uk Stamp Duty Guide",
+        "description": "Detailed information on stamp duty rates and exemptions",
+        "url": "https://www.gov.uk/stamp-duty-land-tax"
+      }
+    ]
+  },
+  {
+    "category": "Area Insights",
+    "resources": [
+      {
+        "name": "CrimeRate",
+        "description": "Analyze safety and crime statistics for UK neighborhoods",
+        "url": "https://www.police.uk/crime-map"
+      },
+      {
+        "name": "School Checker",
+        "description": "Evaluate schools near potential properties for families",
+        "url": "https://www.gov.uk/school-performance-tables"
+      }
+    ]
+  },
+  {
+    "category": "Legal and Transaction Support",
+    "resources": [
+      {
+        "name": "The Law Society",
+        "description": "Find licensed conveyancers and property solicitors",
+        "url": "https://solicitors.lawsociety.org.uk"
+      },
+      {
+        "name": "Citizens Advice",
+        "description": "Guidance on legal rights and responsibilities during property transactions",
+        "url": "https://www.citizensadvice.org.uk/housing"
+      }
+    ]
+  }
+]
